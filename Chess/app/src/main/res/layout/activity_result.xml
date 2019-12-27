@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    >
+
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:paddingTop="40dp"
+        android:src="@drawable/gg" />
+
+
+
+
+    <TextView
+        android:id="@+id/resultTF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:layout_marginBottom="70dp"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/saveBT"
+            android:onClick="saveBT_handler"
+            android:layout_width="125dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="save"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="129dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="HOME"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/exitBT"
+            android:onClick="exitBT_handler"
+            android:layout_width="129dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="EXIT"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

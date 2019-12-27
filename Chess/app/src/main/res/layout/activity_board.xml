@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    tools:context=".BoardActivity"
+    >
+
+    <GridView
+        android:id="@+id/gridview_board"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:background="@drawable/wood_board"
+        android:numColumns="8"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/textview_worb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Started: White Turn"
+            android:textColor="#96621e"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            />
+
+        <TextView
+            android:id="@+id/textview_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#e6093d"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/undoBT"
+            android:onClick="undoBT_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orangebrown"
+            android:text="Undo"
+            />
+        <Button
+            android:id="@+id/drawBT"
+            android:onClick="drawBT_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orangebrown"
+            android:text="Draw"
+            />
+        <Button
+            android:id="@+id/resignBT"
+            android:onClick="resignBT_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orangebrown"
+            android:text="Resign"
+        />
+        <Button
+            android:id="@+id/aiBT"
+            android:onClick="aiBT_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orangebrown"
+            android:text="AI"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

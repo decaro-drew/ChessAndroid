@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    >
+
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:background="@null"
+        android:paddingTop="40dp"
+        android:src="@drawable/main_logo" />
+
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:background="@drawable/btn_blue"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Or"/>
+
+    <Button
+        android:id="@+id/loadGameBT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Load Game"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_darkblue"
+        android:layout_marginBottom="16dp"
+        />
+
+
+
+</LinearLayout>
